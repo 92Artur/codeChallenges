@@ -88,6 +88,19 @@ int secondmain()
 }
 
 
+int shortway(){
+	std::ifstream t("list1.txt");
+	std::stringstream buffer;
+	buffer << t.rdbuf();
+
+	std::vector<std::string> text;
+	std::string token;
+	while(std::getline(buffer, token, '\n')) {
+		text.push_back(token);
+	}
+}
+
+
 const char* map_file(const char* fname, size_t& length)
 {
 	int fd = open(fname, O_RDONLY);

@@ -11,6 +11,7 @@
 #include <stdint.h>
 #include <vector>
 #include <sstream>
+#include <fstream>
 
 
 // for mmap:
